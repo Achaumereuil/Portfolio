@@ -1,0 +1,211 @@
+/* Portfoliospace.css */
+:root {
+    --jade: #00b894;
+    --bg: #111;
+    --card-bg: #222;
+    --text: #fff;
+    --muted: #aaa;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Montserrat', Arial, sans-serif;
+    min-height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px 0 40px;
+}
+.logo {
+    font-weight: 700;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+}
+nav {
+    display: flex;
+    gap: 32px;
+}
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 16px;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+nav a:hover, nav a.active {
+    background: var(--jade);
+    color: var(--bg);
+}
+.sidebar {
+    position: fixed;
+    left: 24px;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    z-index: 10;
+}
+.sidebar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+    color: var(--jade);
+    font-size: 1.5em;
+    text-decoration: none;
+    border: 2px solid var(--jade);
+    transition: background 0.3s;
+}
+.sidebar a:hover {
+    background: var(--jade);
+    color: var(--bg);
+}
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px 0 20px;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.hero-text {
+    flex: 1;
+}
+.hero-title {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.hero-title span {
+    color: var(--jade);
+}
+.hero-desc {
+    color: var(--muted);
+    margin-bottom: 18px;
+}
+.hero-img {
+    width: 220px;
+    border-radius: 18px;
+    background: var(--card-bg);
+    border: 2px solid var(--jade);
+    box-shadow: 0 0 24px var(--jade);
+}
+.quote {
+    border: 2px solid var(--jade);
+    border-radius: 12px;
+    padding: 18px 24px;
+    margin: 32px 0;
+    font-size: 1.1em;
+    background: var(--card-bg);
+    color: var(--jade);
+    font-style: italic;
+}
+section {
+    margin-bottom: 48px;
+}
+.section-title {
+    font-size: 1.3em;
+    color: var(--jade);
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+.projects {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.project-card {
+    background: var(--card-bg);
+    border: 2px solid var(--jade);
+    border-radius: 14px;
+    padding: 18px;
+    width: 250px;
+    color: var(--text);
+    margin-bottom: 18px;
+}
+.project-title {
+    font-weight: 700;
+    color: var(--jade);
+    margin-bottom: 8px;
+}
+.project-desc {
+    color: var(--muted);
+    font-size: 0.95em;
+    margin-bottom: 12px;
+}
+.skills {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.skill {
+    background: var(--card-bg);
+    border: 2px solid var(--jade);
+    border-radius: 10px;
+    padding: 8px 18px;
+    color: var(--jade);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.about {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.about-text {
+    flex: 1;
+}
+.about-img {
+    width: 160px;
+    border-radius: 18px;
+    background: var(--card-bg);
+    border: 2px solid var(--jade);
+    box-shadow: 0 0 24px var(--jade);
+}
+.contact-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.contact-card {
+    background: var(--card-bg);
+    border: 2px solid var(--jade);
+    border-radius: 10px;
+    padding: 12px 18px;
+    color: var(--jade);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+footer {
+    text-align: center;
+    color: var(--muted);
+    padding: 32px 0 12px 0;
+    font-size: 0.95em;
+}
+.square {
+    position: absolute;
+    border: 2px solid var(--jade);
+    opacity: 0.2;
+}
+.square1 { top: 80px; left: 60px; width: 40px; height: 40px; }
+.square2 { top: 320px; right: 80px; width: 30px; height: 30px; }
+.square3 { top: 600px; left: 120px; width: 24px; height: 24px; }
+.square4 { top: 900px; right: 120px; width: 36px; height: 36px; }
+.square5 { bottom: 80px; left: 200px; width: 28px; height: 28px; }
+.square6 { bottom: 120px; right: 180px; width: 32px; height: 32px; }
+@media (max-width: 900px) {
+    main { max-width: 98vw; }
+    .projects { flex-direction: column; }
+    .about { flex-direction: column; }
+}
