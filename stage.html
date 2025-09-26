@@ -1,35 +1,50 @@
 <!DOCTYPE html>
-<html lang="fr">
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Veille Informatique</title>
-        <style>
-            h1, h2 {
-                color: white;
-            }
-            ul, li {
-                color: white;
-            }
-            p {
-                color: white;
-            }
-        </style>
-    </head>
-    <body>
-        <body style="background-image: url('Images/Background.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh;"></body>
-        <h1>Bienvenue sur mon site</h1>
-        <p>Ceci est mon premier paragraphe en html</p>
-        <a href="https://github.com">Visitez mon Github</a>
-        <a href="index.html">Accueil</a>
-        <a href="Projets.html">Projets</a>
-        <a href="contact.html">Projets</a>
-        <a href="veille_infromatique.html">Veille Informatique</a>
-        <hr>
-        <h2>Mes competences</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Python</li>
-        </ul>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stages - Chaumereuil Alexandre</title>
+    <link rel="stylesheet" href="Portfoliostyle.css">
+</head>
+<body>
+    <div class="square square1"></div>
+    <div class="square square2"></div>
+    <div class="square square3"></div>
+    <div class="square square4"></div>
+    <div class="square square5"></div>
+    <div class="square square6"></div>
+    <header>
+        <div class="logo">@Alex</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projets.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="veille_info.html">Veille</a>
+            <a href="stage.html" class="active">Stages</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="section-title">Mes Stages</div>
+            <div class="projects">
+                <!-- Exemple de stage organisé par année ou période -->
+                <div class="project-card">
+                    <div class="project-title">2023 - Stage chez Entreprise X</div>
+                    <div class="project-desc">Développement d'un site vitrine et gestion de bases de données.</div>
+                    <a class="skill" href="#">Voir le rapport</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">2024 - Stage chez Entreprise Y</div>
+                    <div class="project-desc">Mise en place d'une infrastructure réseau et support utilisateur.</div>
+                    <a class="skill" href="#">Voir le rapport</a>
+                </div>
+                <!-- Ajoute tes stages ici, en respectant l'organisation temporelle -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Chaumereuil Alexandre. Tous droits réservés.<br>
+        <span style="color:var(--jade);">Portfolio BTS SIO</span>
+    </footer>
+</body>
+</html>
