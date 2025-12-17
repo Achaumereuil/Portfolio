@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Contact - Chaumereuil Alexandre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Alexandre Chaumereuil</title>
     <link rel="stylesheet" href="Portfoliostyle.css">
 </head>
 <body>
@@ -12,28 +13,85 @@
     <div class="square square4"></div>
     <div class="square square5"></div>
     <div class="square square6"></div>
+    
     <header>
-        <div class="logo">@Alex</div>
+        <div class="logo">@Alexandre</div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="projets.html">Projects</a>
+            <a href="index.html">Accueil</a>
+            <a href="projets.html">Projets</a>
             <a href="stage.html">Stages</a>
             <a href="veille_informatique.html">Veille</a>
             <a href="contact.html" class="active">Contact</a>
         </nav>
     </header>
+    
     <main>
         <section>
-            <div class="section-title">Contact</div>
-            <div class="contact-list">
-                <div class="contact-card">Email : a.chaumereuil@free.fr</div>
-                <div class="contact-card">GitHub : <a href="https://github.com/Achaumereuil" target="_blank">Achaumereuil</a></div>
-                <div class="contact-card">Téléphone : 06 12 34 56 78</div>
+            <div class="section-title">Me Contacter</div>
+            <p style="color:var(--muted);margin-bottom:40px;font-size:1.1em;">
+                N'hésitez pas à me contacter pour toute opportunité de stage, de projet ou simplement pour échanger !
+            </p>
+            
+            <div class="contact-list"> 
+                <div class="contact-card">
+                    <span style="font-size:1.5em;">💻</span>
+                    <div>
+                        <strong>GitHub</strong><br>
+                        <a href="https://github.com/Achaumereuil" target="_blank" rel="noopener">Achaumereuil</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <span style="font-size:1.5em;">💼</span>
+                    <div>
+                        <strong>LinkedIn</strong><br>
+                        <a href="#">Alexandre Chaumereuil</a>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="contact-form" action="#" method="post">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Sujet</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Envoyer le message</button>
+            </form>
+        </section>
+        
+        <section style="margin-top:60px;padding:40px;background:var(--card-bg);border-radius:24px;border:1px solid rgba(255,255,255,0.08);">
+            <div class="section-title">Disponibilité</div>
+            <div style="color:var(--muted);font-size:1.05em;line-height:1.8;">
+                <p style="margin-bottom:16px;">
+                    🎓 <strong style="color:var(--jade);">Formation :</strong> BTS SIO à Brive-la-Gaillarde<br>
+                    💼 <strong style="color:var(--jade);">Statut :</strong> En recherche de stage et d'alternance<br>
+                    🚗 <strong style="color:var(--jade);">Mobilité :</strong> Permis B, véhiculé<br>
+                    🌍 <strong style="color:var(--jade);">Langues :</strong> Français (natif), Anglais (B2), Espagnol (A2)
+                </p>
+            </div>
+        </section>
+        
+        <section style="margin-top:60px;">
+            <div class="section-title">Centres d'intérêt</div>
+            <div class="skills">
+                <div class="skill">🎮 Jeux vidéo</div>
+                <div class="skill">🏎️ Formule 1</div>
+                <div class="skill">🚀 Espace & Aéronautique</div>
+                <div class="skill">💻 Nouvelles technologies</div>
+                <div class="skill">📚 Lecture tech</div>
             </div>
         </section>
     </main>
+    
     <footer>
-        &copy; 2025 Chaumereuil Alexandre. Tous droits réservés.<br>
+        &copy; 2025 Alexandre Chaumereuil. Tous droits réservés.<br>
         <span style="color:var(--jade);">Portfolio BTS SIO</span>
     </footer>
 </body>

@@ -1,11 +1,11 @@
-
-</html>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio - Chaumreuil_Alexandre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Alexandre Chaumereuil</title>
     <link rel="stylesheet" href="Portfoliostyle.css">
+    <meta name="description" content="Portfolio d'Alexandre Chaumereuil, étudiant BTS SIO spécialisé en développement web">
 </head>
 <body>
     <div class="square square1"></div>
@@ -14,83 +14,128 @@
     <div class="square square4"></div>
     <div class="square square5"></div>
     <div class="square square6"></div>
+    
     <header>
         <div class="logo">@Alexandre</div>
         <nav>
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html" class="active">Accueil</a>
             <a href="projets.html">Projets</a>
             <a href="stage.html">Stages</a>
             <a href="veille_informatique.html">Veille</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
+    
     <div class="sidebar">
-        <a href="https://github.com/Achaumereuil"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" width="22"></a>
-        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="22"></a>
-        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/behance.svg" alt="Behance" width="22"></a>
+        <a href="https://github.com/Achaumereuil" target="_blank" rel="noopener" aria-label="GitHub">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" width="24">
+        </a>
+        <a href="#" aria-label="LinkedIn">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="24">
+        </a>
+        <a href="#" aria-label="Behance">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/behance.svg" alt="Behance" width="24">
+        </a>
     </div>
+    
     <main>
         <section class="hero">
             <div class="hero-text">
-                <div class="hero-title">Alexandre<span>étudiant BTS SIO </span></div>
-                <div class="hero-desc">Je code en Python, Html, css, PHP. </div>
-                <a class="skill" href="Images/CVpdf.pdf" download>Download CV</a>
+                <div class="hero-title">
+                    Alexandre
+                    <span>Étudiant BTS SIO Option SISR</span>
+                </div>
+                <div class="hero-desc">
+                    Passionné par le développement web et les nouvelles technologies. 
+                    Je code en Python, HTML, CSS, PHP et je suis constamment à la recherche de nouveaux défis.
+                </div>
+                <a class="skill" href="images/CVpdf.pdf" download>Télécharger mon CV</a>
             </div>
-            <img src="Images/photoA.jpg" alt="Hero" class="hero-img">
+            <img src="images/photoA.jpg" alt="Photo d'Alexandre Chaumereuil" class="hero-img">
         </section>
-        <div class="quote">With great power comes great electricity bill<br><span style="color:var(--muted);font-size:0.9em;">- Dr. Who</span></div>
+        
+        <div class="quote">
+            With great power comes great electricity bill
+            <br><span style="color:var(--muted);font-size:0.9em;">- Dr. Who</span>
+        </div>
+        
         <section>
-            <div class="section-title">Projects</div>
+            <div class="section-title">Projets récents</div>
             <div class="projects">
                 <div class="project-card">
-                    <div class="project-title">Creaction d'une page web pour une assiociation</div>
-                    <div class="project-desc">En HTML, CSS, Javascript.</div>
-                    <button class="skill">Live</button>
+                    <div class="project-title">Site web pour une association</div>
+                    <div class="project-desc">
+                        Création d'un site web contre le harcèlement en HTML, CSS et JavaScript.
+                        Interface responsive et moderne.
+                    </div>
+                    <a class="skill" href="projets.html">Voir le projet</a>
                 </div>
                 <div class="project-card">
-                    <div class="project-title">Projet2</div>
-                    <div class="project-desc">Projet a faire en cours d'année.</div>
-                    <button class="skill">Live</button>
+                    <div class="project-title">Portfolio personnel</div>
+                    <div class="project-desc">
+                        Développement de ce portfolio pour présenter mes compétences et réalisations.
+                        Design moderne et animations fluides.
+                    </div>
+                    <a class="skill" href="https://github.com/Achaumereuil/Portfolio" target="_blank">Voir sur GitHub</a>
                 </div>
                 <div class="project-card">
-                    <div class="project-title">Projet3</div>
-                    <div class="project-desc">Projet a faire en cours d'année.</div>
-                    <button class="skill">Live</button>
+                    <div class="project-title">Projets à venir</div>
+                    <div class="project-desc">
+                        Nouveaux projets en cours de développement dans le cadre de ma formation BTS SIO.
+                    </div>
+                    <a class="skill" href="projets.html">En savoir plus</a>
                 </div>
             </div>
         </section>
+        
         <section>
-            <div class="section-title">Skills</div>
+            <div class="section-title">Compétences</div>
             <div class="skills">
                 <div class="skill">HTML</div>
                 <div class="skill">CSS</div>
                 <div class="skill">JavaScript</div>
                 <div class="skill">PHP</div>
                 <div class="skill">Python</div>
-                <div class="skill">Figma</div>
                 <div class="skill">MySQL</div>
-                <div class="skill">Wordpress</div>
+                <div class="skill">Figma</div>
+                <div class="skill">WordPress</div>
             </div>
         </section>
+        
         <section class="about">
             <div class="about-text">
-                <div class="section-title">A propos de moi:</div>
-                <div style="color:var(--muted);margin-bottom:12px;">Bonjour je m'appelle Alexandre. Je suis étudiant en BTS SIO a Brive-la-gaillarde, je me forme aux dévellopement web et aux infrastructures web en Html, python, css, Php.<br><br>Je suis plus spécialisé dans le domaine du dévellopement mais j'ai aussi des basse en système et réseaux.</div>
+                <div class="section-title">À propos de moi</div>
+                <div style="color:var(--muted);margin-bottom:12px;">
+                    Bonjour, je m'appelle Alexandre. Je suis étudiant en BTS SIO à Brive-la-Gaillarde, 
+                    je me forme au développement web et aux infrastructures informatiques.
+                    <br><br>
+                    Je suis plus spécialisé dans le domaine du développement web, mais j'ai aussi des 
+                    bases solides en systèmes et réseaux. Mon objectif est de devenir développeur full-stack 
+                    et de contribuer à des projets innovants.
+                </div>
             </div>
-            <img src="Images/imgp1.png" alt="About" class="about-img">
+            <img src="images/imgp1.png" alt="Illustration développement" class="about-img">
         </section>
+        
         <section>
-            <div class="section-title">Contacts</div>
+            <div class="section-title">Contact</div>
             <div class="contact-list">
-                <div class="contact-card">Email: a.chaumereuil@free.fr</div>
-                <div class="contact-card">LinkedIn: /</div>
-                <div class="contact-card">GitHub: /Achaumereuil</div>
+                <div class="contact-card">
+                    <span>📧</span> Email : a.chaumereuil@free.fr
+                </div>
+                <div class="contact-card">
+                    <span>💼</span> LinkedIn : <a href="#">/alexandre-chaumereuil</a>
+                </div>
+                <div class="contact-card">
+                    <span>💻</span> GitHub : <a href="https://github.com/Achaumereuil" target="_blank">/Achaumereuil</a>
+                </div>
             </div>
         </section>
     </main>
+    
     <footer>
-        &copy; 2025 Alexandre Chaumereuil. All rights reserved.<br>
-        <span style="color:var(--jade);">Template made from Alexandre</span>
+        &copy; 2025 Alexandre Chaumereuil. Tous droits réservés.<br>
+        <span style="color:var(--jade);">Portfolio BTS SIO - Option Développement</span>
     </footer>
 </body>
 </html>
